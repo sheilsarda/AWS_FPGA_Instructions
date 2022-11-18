@@ -32,5 +32,22 @@ sudo apt install ros-humble-ros-base
 source /opt/ros/humble/setup.bash
 ```
 
+#### Step 4: Necessary Packages
+```sh
+sudo apt install python3-colcon-common-extensions
+```
 
+## How to Write Packages
+
+### Init Package
+#### [Source](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Creating-Your-First-ROS2-Package.html)
+```sh
+cd ~/ros2_ws/src
+ros2 pkg create --build-type ament_cmake <package_name>
+ros2 pkg create --build-type ament_cmake --node-name my_node my_package
+cd ~/ros2_ws
+colcon build
+```
+### Creating Launch Files
+#### [Source](https://docs.ros.org/en/humble/Tutorials/Intermediate/Launch/Creating-Launch-Files.html)
 
