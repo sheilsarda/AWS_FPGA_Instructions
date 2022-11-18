@@ -56,3 +56,9 @@ colcon build
 ### Creating Launch Files
 #### [Source](https://docs.ros.org/en/humble/Tutorials/Intermediate/Launch/Creating-Launch-Files.html)
 
+### Running Packages
+```sh
+colcon build
+. install/setup.bash
+ros2 run <package-name> <node-name>
+```
