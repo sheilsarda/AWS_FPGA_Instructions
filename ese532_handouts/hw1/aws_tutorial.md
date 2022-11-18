@@ -90,6 +90,7 @@ Open a terminal and ssh into your machine using your key pair and ip
 address (alternatively, [use VS Code to ssh in](https://medium.com/@christyjacob4/using-vscode-remotely-on-an-ec2-instance-7822c4032cff))
  ```
  ssh -L 8000:localhost:8000 -i /path/to/key_pair.pem ec2-user@<ip address of your machine>
+ sudo ssh -L 8000:localhost:8000 -i aws_login.pem ubuntu@<ip address of your machine>
  ```
  ```{note}
  We are tunnelling the remote port 8000 to our local port 8000
