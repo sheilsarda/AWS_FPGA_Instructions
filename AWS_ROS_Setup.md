@@ -62,3 +62,9 @@ colcon build
 . install/setup.bash
 ros2 run <package-name> <node-name>
 ```
+
+### Other Helpful Dependencies
+```sh
+sudo apt install picocom
+sudo apt install socat
+```
