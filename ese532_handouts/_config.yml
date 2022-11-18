@@ -1,0 +1,25 @@
+# Book settings
+title: ESE532 Handouts Fall 2020
+author: Department of Electrical and Systems Engineering
+copyright: "2020 Department of Electrical and Systems Engineering at the University of Pennsylvania"
+logo: common/penn_engineering.png
+repository:
+  url: https://github.com/icgrp/ese532_handouts
+  path_to_book: "ese532_handouts"
+html:
+  use_repository_button: true
+  use_issues_button: true
+  use_edit_page_button: true
+  home_page_in_navbar: true
+  extra_navbar: ""
+exclude_patterns:
+  - common/*
+  - hw7/*
+  - project/*
+
+latex:
+  latex_documents:
+    targetname: book.tex
+sphinx:
+  config:
+    mathjax_path: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
